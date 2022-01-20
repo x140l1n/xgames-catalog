@@ -4,8 +4,29 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 html {
   height: 100vh;
+  scroll-behavior: unset !important;
 }
 
 #root {
@@ -34,15 +55,25 @@ main {
   background-color: black !important;
 }
 
-.card {
+.card-zoom {
   transition: all 0.1s;
   cursor: pointer;
 }
 
-.card:hover {
+.card-zoom:hover {
   transform: scale(1.1) !important;
 }
 
-.list-games {
+.list-games, .details {
   max-width: 1400px;
+}
+
+.btn-go-back {
+  background-color: #E72F5A;
+  border-color: #E72F5A;
+}
+
+.btn-go-back:hover {
+  background-color: #be3152;
+  border-color: #be3152;
 }
